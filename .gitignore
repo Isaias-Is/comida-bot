@@ -1,0 +1,8 @@
+# Ignora las carpetas:
+.rasa/
+models/
+
+# Ignora los archivos:
+credentials.yml
+# Ignora todos los archivocs CSV.
+*.csv

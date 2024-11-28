@@ -1,0 +1,153 @@
+version: "3.1"
+
+actions:
+  - set_time
+  - show_log
+  - mostrar_sugerencias
+  - ajustar_imagen
+
+
+responses:
+  utter_saludar:
+    - text: "Hola! Espero estes teniendo un excelente día!"
+    - text: "Hola! Que gusto tenerte por aquí."
+    #- text: ""
+  utter_ask_perfil_sabor:
+    - text: "Hoy que te gustaría de {tipo_comida}, algo: Salado, Dulce, Ácido, Picante, Amargo?"
+      #metadata:
+      #  rephrase: True
+    - text: "Qué tipo de {tipo_comida} se te antoja hoy: Dulce, Salado, Picante, Amargo, Ácido?"
+      #metadata:
+      #  rephrase: True
+  utter_ask_personalizar_aporte_nutricional:
+    - text: "Desea personalizar el aporte nutricional de la sugerencia que se le dará?"
+    - text: "Desea personalizar el aporte calórico, proteínico y de grasas de las sugerencia a generar?"
+  utter_ask_cant_calorias:
+    - text: "Para su {tipo_comida} desea muchas o pocas calorias, o no le importa esta preferencia?"
+  utter_ask_cant_grasas:
+    - text: "Desea su {tipo_comida} con muchas o pocas grasas, o no le importa realmente?"
+  utter_ask_proteinas_altas:
+    - text: "Desea en su {tipo_comida} muchas proteinas?"
+  utter_ask_region:
+    - text: "De qué región desea la sugerencia de su {tipo_comida}?"
+  utter_ask_vegetariano:
+    - text: "Esta bajo un régimen vegetariano?"
+    - text: "Sólo desea sugerencias vegetarianas?"
+    - text: "Confirmar sólo la búsqueda de comida vegetariana?"
+  utter_ask_sin_gluten:
+    - text: "Es alérgico al gluten?"
+    - text: "Sólo sugerir comida sin gluten?"
+    - text: "Quiere sólo comida sin gluten?"
+  utter_ask_sin_lactosa:
+    - text: "Es intolerante a la lactosa?"
+      buttons:
+        - payload: "/SetSlots(sin_lactosa=true)"
+          title: Si
+        - payload: "/SetSlots(sin_lactosa=false)"
+          title: No
+      #text: "Quiere sólo resultados sin leche?"
+  utter_ask_condiciones_especiales:
+    - text: "Presenta alergias, intolerancia o no consume carne?"
+    - text: "Es intolerante, alérgico o tiene prohibido consumir algo?"
+  utter_ask_tipo_comida:
+    - text: "De qué busca una sugerencia: Platillo, Bebida, Complemento o Sopa"
+    - text: "Qué presentación de comida se le antoja hoy? Platillo, Sopa, Bebida, Complemento"
+  utter_ask_nombre_comida:
+    - text: "Qué platillo, comida o bebida desea ver?"
+    - text: "Cuál es el nombre de la comida o bebida que desea ver su imagen?"
+  utter_mostrar_imagen:
+    - text: "Aquí hay una imagen de {nombre_comida}"
+      #image: "<RecomiendaBot\data\Tacos.jpg>"
+
+slots:
+  condiciones_especiales:
+    type: bool
+    mappings:
+      - type: from_llm
+  personalizar_aporte_nutricional:
+    type: bool
+    mappings:
+      - type: from_llm
+  perfil_sabor:
+    type: categorical
+    values:
+      - "dulce"
+      - "salado"
+      - "picante"
+      - "ácido"
+      - "amargo"
+    mappings:
+      - type: from_llm
+  momento_del_dia:
+    type: categorical
+    values:
+      - "Desayuno"
+      - "Comida"
+      - "Cena"
+    mappings:
+      - type: custom
+  vegetariano:
+    type: bool
+    mappings:
+      - type: from_llm
+  sin_gluten:
+    type: bool
+    mappings:
+      - type: from_llm
+  sin_lactosa:
+    type: bool
+    mappings:
+      - type: from_llm
+  region:
+    type: text
+    mappings:
+      - type: from_llm
+  tipo_comida:
+    type: categorical
+    values:
+      - "platillo"
+      - "bebida"
+      - "complemento"
+      - "sopa"
+    mappings:
+      - type: from_llm
+  cant_calorias:
+    type: categorical
+    values:
+      - "muchas"
+      - "pocas"
+      - "NA"
+    mappings:
+      - type: from_llm
+  cant_grasas:
+    type: categorical
+    values:
+      - "muchas"
+      - "pocas"
+      - "NA"
+    mappings:
+      - type: from_llm
+  proteinas_altas:
+    type: bool
+    mappings:
+      - type: from_llm
+  bebida:
+    type: bool
+    mappings:
+      - type: from_llm
+  complemento:
+    type: bool
+    mappings:
+      - type: from_llm
+  refrigerio:
+    type: bool
+    mappings:
+      - type: from_llm
+  sopa:
+    type: bool
+    mappings:
+      - type: from_llm
+  postre:
+    type: bool
+    mappings:
+      - type: from_llm

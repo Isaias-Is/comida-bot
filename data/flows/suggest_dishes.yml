@@ -1,0 +1,91 @@
+flows:
+  sugerencia_de_comida:
+    #name: Sugiere lo que el usuario pidio.
+    description: "Flujo que da una sugerencia al usuario según sus preferencias"
+    steps:
+      - action: set_time
+      - collect: tipo_comida
+        description: "Le pregunta al usuario que tipo de comida quiere si una bebida, sopa, etc"
+      - collect: perfil_sabor
+        description: "Obtiene el perfil de sabor principal de comida que desea el usuario"
+      - collect: condiciones_especiales
+        description: "Guarda si el usuario personalizará condiciones especiales, como sin lactosa, sin gluten, vegetariano"
+        next:
+          - if: slots.condiciones_especiales
+            then:
+            - call: personalizar_restricciones
+              description: "Se mete al flujo personalizar_restricciones y vuelve al terminarlo."
+              next: "personalizar_aporte_nutricional"
+          - else: "personalizar_aporte_nutricional"
+      - collect: personalizar_aporte_nutricional
+        id: personalizar_aporte_nutricional
+        #ask_before_filling: true
+        description: "Saber si el usuario quiere personalizar el aporte nutricional de la sugerencia"
+        next:
+          - if: slots.personalizar_aporte_nutricional
+            then:
+              - call: personalizar_aporte_nutricional
+              - call: personalizar_region
+                next: "mostrar_sugerencias"
+          - else: mostrar_sugerencias
+      - action: mostrar_sugerencias
+        id: mostrar_sugerencias
+
+  personalizar_aporte_nutricional:
+    name: Personaliza el aporte nutricional de la sugerencia.
+    description: "Flujo que ayuda a seleccionar el aporte nutricional que quiere el usuario. Ejemplos son: Alto/bajo en calorías, grasas y proteína"
+    steps:
+      - collect: cant_calorias
+        description: "Guarda si el usuario quiere muchas o pocas calorias en las comidas."
+      - collect: cant_grasas
+        description: "Cuantas grasas quiere el usuario: Muchas, Pocas, Si no importa es: nulo"
+      - collect: proteinas_altas
+        description: "Si el usuario desea comidas con proteina alta."
+
+  personalizar_region:
+    name: Personaliza la región del platillo.
+    description: "Flujo que selecciona de que región es el platillo que desea el usuario."
+    steps:
+      - collect: region
+        description: "País o región del platillo. Probables valores son: México, Italia, Asiatica, Americana, Medio Oriente"
+
+  personalizar_restricciones:
+    name: Personaliza las restricciones para ser vegetarianas, sin gluten o sin lactosa.
+    description: "Flujo que personaliza las sugerencias para ser vegetarianas, sin gluten o sin lactosa."
+    steps:
+      - collect: vegetariano
+        description: "Pregunta si el usuario es vegetariano o no"
+      - collect: sin_gluten
+        description: "Pregunta si el usuario es alérgico al gluten o no"
+      - collect: sin_lactosa
+        description: "Guarda si el usuario es intolerante a la lactosa o si sólo prefiere sugerencias sin leche."
+
+  mostrar_imagen_comida:
+    name: Mostrar imagen de un platillo, comida, bebida.
+    description: "Muestra una imagen de un platillo, comida o bebida especificado por el usuario"
+    steps:
+      - collect: nombre_comida
+        description: "Pregunta el nombre de la comida a mostrar una imagen"
+      - action: ajustar_imagen
+      - action: utter_mostrar_imagen
+#  sugerir_bebida:
+#    name: Sugerencia de bebida
+#    description: "Sugiere una bebida según el antojo del usuario."
+#    #nlu:
+#    steps:
+#      - set_slots:
+#        - tipo_comida: "bebida"
+#        ask_before_filling: true
+#        reset_after_flow_ends: false
+#      - link: sugerencia_final
+
+#  sugerir_sopa:
+#    name: Sugerencia de sopa
+#    description: "Si el usuario quiere sopa, se le hacen sugerencias."
+#    steps:
+#      - set_slots:
+#        - tipo_comida: "sopa"
+#        ask_before_filling: true
+#        reset_after_flow_ends: false
+#      - link: sugerencia_final
+#  

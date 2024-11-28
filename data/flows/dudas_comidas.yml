@@ -1,0 +1,20 @@
+flow:
+  responder_dudas_comidas:
+    name: Resolver dudas de comidas.
+    description: "Flujo que resuelve las dudas de comidas que tenga el usuario"
+    steps:
+      - collect: nombre_comida
+        description: "Recolecta cual es el nombre de la comida de la que el usuario tiene dudas"
+      - collect: campo_duda
+        description: "Guarda el campo de la duda de la comida, esto es cual es el campo de la duda"
+      - set_slots:
+          - region: null
+          
+          - if: not slots.region
+            then:
+                next: END
+          - else:
+            - collect: valor_duda
+        description: "Guarda el valor de la duda del usuario. Si desea saber si una comida tiene mucho o poco de proteinas o si este es una sopa o complemento."
+      - action: consultar_duda
+      

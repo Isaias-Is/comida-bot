@@ -1,0 +1,9 @@
+flows:
+  saludar:
+    name: Saluda al usuario.
+    description: "Saluda al usuario al inicio de la conversación."
+    steps:
+      - action: utter_saludar
+      - link: "sugerencia_de_comida" #Actualizar después, por pruebas así será el flujo.
+
+  #Implementar la acciión clarify.

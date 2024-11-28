@@ -1,0 +1,20 @@
+recipe: default.v1
+language: es
+pipeline:
+- name: NLUCommandAdapter
+- name: SingleStepLLMCommandGenerator
+  llm:
+    provider: gemini
+    model: gemini-1.5-flash
+    temperature: 0
+    timeout: 7 #Expresado en segundos.
+    max_tokens: 256
+  flow_retrieval:
+    embeddings:
+      provider: openai
+      model: text-embedding-3-small
+
+policies:
+- name: FlowPolicy
+#- name: IntentlessPolicy
+assistant_id: recomiendaBot-V1

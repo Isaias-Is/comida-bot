@@ -1,0 +1,83 @@
+test_cases:
+  - test_case: El usuario pide una sugerencia, la personaliza y aplica restricciones.
+    steps:
+    - user: "Sugerir"
+    - utter: utter_ask_tipo_comida
+    - user: "Platillo"
+    - utter: utter_ask_perfil_sabor
+    - user: "Salado"
+    - utter: utter_ask_condiciones_especiales
+    - user: "Si"
+    - utter: utter_ask_vegetariano
+    - user: "Si"
+    - utter: utter_ask_sin_gluten
+    - user: "Si"
+    - utter: utter_ask_sin_lactosa
+    - user: "Si"
+    - utter: utter_ask_personalizar_aporte_nutricional
+    - user: "Si"
+    - utter: utter_ask_cant_calorias
+    - user: "Muchas"
+    - utter: utter_ask_cant_grasas
+    - user: "Pocas"
+    - utter: utter_ask_proteinas_altas
+    - user: "No"
+    - utter: utter_ask_region
+    - user: "Alemania"
+
+  - test_case: El usuario pide una sugerencia y la personaliza y pone restricciones.
+    steps:
+    - user: "Sugerencia"
+    - utter: utter_ask_tipo_comida
+    - user: "Complemento"
+    - utter: utter_ask_perfil_sabor
+    - user: "Picante"
+    - utter: utter_ask_condiciones_especiales
+    - user: "Si"
+    - utter: utter_ask_vegetariano
+    - user: "Si"
+    - utter: utter_ask_sin_gluten
+    - user: "Si"
+    - utter: utter_ask_sin_lactosa
+    - user: "No"
+    - utter: utter_ask_personalizar_aporte_nutricional
+    - user: "Si por favor"
+    - utter: utter_ask_cant_calorias
+    - user: "No me importa"
+    - utter: utter_ask_cant_grasas
+    - user: "Muchas, por favor"
+    - utter: utter_ask_proteinas_altas
+    - user: "Si por favor"
+    - utter: utter_ask_region
+    - user: "Asiatica"
+    - utter: utter_can_do_something_else
+  
+  - test_case: Usuario pide sugerencia de tipo de comida y no personaliza ni aplica restricciones.
+    steps:
+    - user: "Quiero una sugerencia de bebida, por favor"
+    - utter: utter_ask_perfil_sabor
+    - user: "Dulce"
+    - utter: utter_ask_condiciones_especiales
+    - user: "No"
+    - utter: utter_ask_personalizar_aporte_nutricional
+    - user: "No"
+    - utter: utter_can_do_something_else
+
+  - test_case: Usuario pide sugerencia aplica restricciones, pero no personaliza.
+    steps:
+    - user: "Sugiereme algo"
+    - utter: utter_ask_tipo_comida
+    - user: "Platillo"
+    - utter: utter_ask_perfil_sabor
+    - user: "Acido"
+    - utter: utter_ask_condiciones_especiales
+    - user: "Si"
+    - utter: utter_ask_vegetariano
+    - user: "Si"
+    - utter: utter_ask_sin_gluten
+    - user: "Si"
+    - utter: utter_ask_sin_lactosa
+    - user: "No"
+    - utter: utter_ask_personalizar_aporte_nutricional
+    - user: "No"
+    - utter: utter_can_do_something_else

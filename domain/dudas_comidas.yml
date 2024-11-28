@@ -1,0 +1,34 @@
+slots:
+  campo_duda:
+    type: categorical
+    values:
+      - "Salado"
+      - "Dulce"
+      - "Ácido"
+      - "Picante"
+      - "Amargo"
+      - "Región"
+      - "Desayuno"
+      - "Comida"
+      - "Cena"
+      - "Postre"
+      - "Sopa"
+      - "Snack"
+      - "Complemento"
+      - "Bebida"
+      - "Sólido"
+      - "Calorías"
+      - "Proteínas"
+      - "Grasas"
+      - "Gluten"
+      - "Vegano"
+      - "Lactosa"
+    mappings:
+      - type: from_llm
+  valor_duda:
+    type: categorical
+    values:
+      - "Contiene"
+      - "Muchas"
+      - "Pocas"
+      - "Nada"

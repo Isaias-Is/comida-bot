@@ -1,0 +1,6 @@
+slots:
+  nombre_comida:
+    type: text
+    mappings:
+      - type: from_llm
+
