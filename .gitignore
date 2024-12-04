@@ -1,6 +1,7 @@
 # Ignora las carpetas:
 .rasa/
 models/
+__pycache__/
 
 # Ignora los archivos:
 credentials.yml

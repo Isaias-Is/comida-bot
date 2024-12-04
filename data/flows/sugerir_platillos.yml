@@ -8,21 +8,20 @@ flows:
         description: "Le pregunta al usuario que tipo de comida quiere si una bebida, sopa, etc"
       - collect: perfil_sabor
         description: "Obtiene el perfil de sabor principal de comida que desea el usuario"
-      - collect: condiciones_especiales
-        description: "Guarda si el usuario personalizará condiciones especiales, como sin lactosa, sin gluten, vegetariano"
+      - collect: restricciones_activadas
+        description: "Guarda si el usuario activará restricciones especiales, como sin lactosa, sin gluten, vegetariano"
         next:
-          - if: slots.condiciones_especiales
+          - if: slots.restricciones_activadas
             then:
             - call: personalizar_restricciones
-              description: "Se mete al flujo personalizar_restricciones y vuelve al terminarlo."
+              description: "Entra al flujo personalizar_restricciones, personaliza las restricciones y vuelve al flujo."
               next: "personalizar_aporte_nutricional"
           - else: "personalizar_aporte_nutricional"
-      - collect: personalizar_aporte_nutricional
+      - collect: aporte_nutricional_personalizado_activado
         id: personalizar_aporte_nutricional
-        #ask_before_filling: true
         description: "Saber si el usuario quiere personalizar el aporte nutricional de la sugerencia"
         next:
-          - if: slots.personalizar_aporte_nutricional
+          - if: slots.aporte_nutricional_personalizado_activado
             then:
               - call: personalizar_aporte_nutricional
               - call: personalizar_region
@@ -51,12 +50,12 @@ flows:
 
   personalizar_restricciones:
     name: Personaliza las restricciones para ser vegetarianas, sin gluten o sin lactosa.
-    description: "Flujo que personaliza las sugerencias para ser vegetarianas, sin gluten o sin lactosa."
+    description: "Flujo que personaliza las restricciones para ser vegetarianas, sin gluten o sin lactosa."
     steps:
       - collect: vegetariano
-        description: "Pregunta si el usuario es vegetariano o no"
+        description: "Pregunta sutilmente si el usuario es vegetariano o no"
       - collect: sin_gluten
-        description: "Pregunta si el usuario es alérgico al gluten o no"
+        description: "Pregunta si el usuario es alérgico al gluten"
       - collect: sin_lactosa
         description: "Guarda si el usuario es intolerante a la lactosa o si sólo prefiere sugerencias sin leche."
 

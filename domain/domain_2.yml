@@ -1,0 +1,155 @@
+version: "3.1"
+
+actions:
+  - confirmacionDeLectura
+
+intents:
+  - Saludos
+  - Despedidas
+  - Afirmaciones
+  - Negaciones
+  - PedirRecomendacion
+  - informacionComida
+
+entities:
+  - Region
+  - Horario
+  - Tipo
+  - Estado
+  - Calorias
+  - Proteinas
+  - Grasas
+  - Vegano
+  - Lactosa
+  - Gluten
+
+slots:
+  Region:
+    type: text
+    mappings:
+      - type: from_text
+  Horario:
+    type: text
+    mappings:
+      - type: from_text
+  Tipo:
+    type: text
+    mappings:
+      - type: from_text
+  Estado:
+    type: text
+    mappings:
+      - type: from_text
+  Calorias:
+    type: text
+    mappings:
+      - type: from_text
+  Proteinas:
+    type: text
+    mappings:
+      - type: from_text
+  Grasas:
+    type: text
+    mappings:
+      - type: from_text
+  Vegano:
+    type: text
+    mappings:
+      - type: from_text
+  Lactosa:
+    type: text
+    mappings:
+      - type: from_text
+  Gluten:
+    type: text
+    mappings:
+      - type: from_text
+
+responses:
+  utter_RSaludos:
+  - text: "¡Hola! ¿Cómo estás?"
+  - text: "¡Qué tal! ¿Todo bien?"
+  - text: "¡Buenas! ¿Cómo va todo?"
+  - text: "¡Hey! ¿Cómo te encuentras?"
+  - text: "¡Hola, cómo te va?"
+  - text: "¡Buen día! ¿Cómo te ha ido?"
+  - text: "¡Hola, qué gusto verte!"
+  - text: "¡Saludos! ¿Qué tal tu día?"
+  - text: "¡Qué onda! ¿Todo bien?"
+  - text: "¡Hola, mucho gusto!"
+  - text: "¡Hola! ¿Qué hay de nuevo?"
+  - text: "¡Hola! Qué bueno verte."
+  - text: "¡Hola, qué tal tu jornada?"
+  - text: "¡Buenos días! ¿Cómo te encuentras?"
+  - text: "¡Hola! ¿Cómo te trata la vida?"
+  - text: "¡Qué tal! ¿Cómo te va todo?"
+  - text: "¡Hola! ¿Todo tranquilo?"
+  - text: "¡Buenas tardes! ¿Cómo estás?"
+  - text: "¡Hola, qué alegría saludarte!"
+  - text: "¡Hey! ¿Todo bien contigo?"
+  utter_RDespedidas:
+  - text: "¡Hasta luego!"
+  - text: "¡Nos vemos!"
+  - text: "¡Adiós, que te vaya bien!"
+  - text: "¡Cuídate!"
+  - text: "¡Hasta pronto!"
+  - text: "¡Chao!"
+  - text: "¡Nos estamos viendo!"
+  - text: "¡Hasta la próxima!"
+  - text: "¡Que tengas un buen día!"
+  - text: "¡Que te vaya excelente!"
+  - text: "¡Hasta más tarde!"
+  - text: "¡Adiós, cuídate mucho!"
+  - text: "¡Hasta la vista!"
+  - text: "¡Nos vemos pronto!"
+  - text: "¡Cuídate mucho!"
+  - text: "¡Hasta la próxima ocasión!"
+  - text: "¡Nos vemos luego!"
+  - text: "¡Un placer verte!"
+  - text: "¡Chao, hasta pronto!"
+  - text: "¡Hasta luego, que estés bien!"
+  utter_RPedirRecomendaciones:
+  - text: "Claro, te haré una recomendación."
+  - text: "Con gusto, te ayudaré con eso."
+  - text: "Aquí tienes algunas opciones que podrían interesarte."
+  - text: "¡Con mucho gusto! Te daré algunas sugerencias."
+  - text: "Por supuesto, te daré algunas ideas."
+  - text: "Entiendo lo que necesitas, te puedo ayudar con eso."
+  - text: "Claro, puedo recomendarte algo según lo que buscas."
+  - text: "Sin problema, te pasaré algunas opciones."
+  - text: "Por supuesto, puedo sugerir algo para ti."
+  - text: "Con mucho gusto, te ayudaré a encontrar algo adecuado."
+  - text: "¡Aquí tienes una recomendación que podría gustarte!"
+  - text: "Claro, te pasaré algunas alternativas que cumplen con eso."
+  - text: "¡Seguro! Aquí tienes algunas opciones interesantes."
+  - text: "¡Con gusto! Aquí están algunas recomendaciones para ti."
+  - text: "Claro, hay varias opciones que pueden funcionar."
+  - text: "Te recomendaré algunas opciones que podrían ajustarse a lo que buscas."
+  - text: "Perfecto, te daré algunas sugerencias basadas en tu preferencia."
+  - text: "Sin problema, te puedo sugerir algo que se adapte a tus gustos."
+  - text: "Por supuesto, te pasaré algunas ideas rápidas."
+  - text: "Claro, déjame pensar en algunas opciones que puedan servirte."
+  - text: "Seguro, aquí tienes algunas recomendaciones que podrían interesarte."
+  - text: "Por supuesto, te sugiero estas opciones basadas en lo que mencionaste."
+  - text: "Claro, te ayudo con eso, aquí tienes algunas ideas."
+  - text: "¡Claro que sí! Te daré algunas sugerencias que podrían gustarte."
+  - text: "Aquí tienes algunas ideas que podrían funcionar para ti."
+  - text: "Seguro, te daré algunas opciones que se ajusten a lo que buscas."
+  - text: "Claro, tengo algunas sugerencias que pueden ayudarte."
+  - text: "Aquí te paso algunas opciones interesantes basadas en lo que me pediste."
+  - text: "Por supuesto, voy a recomendarte algo adecuado para ti."
+  - text: "Con gusto, te doy algunas ideas que podrían encajar con lo que necesitas."
+  - text: "Claro, te paso algunas opciones según lo que me mencionaste."
+  - text: "¡Por supuesto! Aquí tienes algunas recomendaciones útiles."
+  - text: "Sin problema, te puedo dar algunas opciones para que elijas."
+  - text: "Claro, te sugiero algunas ideas que podrían ser justo lo que buscas."
+  - text: "¡Entendido! Aquí tienes algunas recomendaciones que podrían funcionar bien."
+  - text: "Con mucho gusto, te recomiendo algunas opciones basadas en tu solicitud."
+  - text: "Claro, te pasaré algunas sugerencias que podrían ser lo que necesitas."
+  - text: "Seguro, te ofrezco varias opciones que podrían encajar con tus gustos."
+  - text: "Aquí tienes algunas recomendaciones que se adaptan a lo que mencionaste."
+  - text: "Por supuesto, te voy a recomendar algunas opciones que se ajusten a lo que buscas."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,11 @@
+version: "3.1"
+
+stories:
+- story: Pedir sugerencia
+  steps:
+    - intent: PedirRecomendacion
+    - action: utter_RPedirRecomendaciones
+    - action: action_ConfirmacionDeLectura
+    - intent: informacionComida
+    - action: utter_RDespedidas
+

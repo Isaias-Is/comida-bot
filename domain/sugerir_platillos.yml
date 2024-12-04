@@ -19,8 +19,8 @@ responses:
     - text: "Qué tipo de {tipo_comida} se te antoja hoy: Dulce, Salado, Picante, Amargo, Ácido?"
       #metadata:
       #  rephrase: True
-  utter_ask_personalizar_aporte_nutricional:
-    - text: "Desea personalizar el aporte nutricional de la sugerencia que se le dará?"
+  utter_ask_aporte_nutricional_personalizado_activado:
+    - text: "Desea personalizar el aporte nutricional o desea continuar sin hacerlo?"
     - text: "Desea personalizar el aporte calórico, proteínico y de grasas de las sugerencia a generar?"
   utter_ask_cant_calorias:
     - text: "Para su {tipo_comida} desea muchas o pocas calorias, o no le importa esta preferencia?"
@@ -36,17 +36,16 @@ responses:
     - text: "Confirmar sólo la búsqueda de comida vegetariana?"
   utter_ask_sin_gluten:
     - text: "Es alérgico al gluten?"
-    - text: "Sólo sugerir comida sin gluten?"
     - text: "Quiere sólo comida sin gluten?"
   utter_ask_sin_lactosa:
     - text: "Es intolerante a la lactosa?"
-      buttons:
-        - payload: "/SetSlots(sin_lactosa=true)"
-          title: Si
-        - payload: "/SetSlots(sin_lactosa=false)"
-          title: No
-      #text: "Quiere sólo resultados sin leche?"
-  utter_ask_condiciones_especiales:
+#      buttons:
+#        - payload: "/SetSlots(sin_lactosa=true)"
+#          title: Si
+#        - payload: "/SetSlots(sin_lactosa=false)"
+#          title: No
+    - text: "Quiere sólo resultados sin leche?"
+  utter_ask_restricciones_activadas:
     - text: "Presenta alergias, intolerancia o no consume carne?"
     - text: "Es intolerante, alérgico o tiene prohibido consumir algo?"
   utter_ask_tipo_comida:
@@ -60,11 +59,11 @@ responses:
       #image: "<RecomiendaBot\data\Tacos.jpg>"
 
 slots:
-  condiciones_especiales:
+  restricciones_activadas:
     type: bool
     mappings:
       - type: from_llm
-  personalizar_aporte_nutricional:
+  aporte_nutricional_personalizado_activado:
     type: bool
     mappings:
       - type: from_llm

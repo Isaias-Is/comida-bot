@@ -1,0 +1,1988 @@
+version: "3.1"
+nlu:
+- intent: Saludos
+  examples: |
+    - Hola
+    - ¿Qué tal?
+    - Como estas?
+    - Buenos días
+    - Buen dia
+    - Hello
+    - Hi
+    - Holis
+    - Holiwis
+    - ¡Hola!
+    - Buen día.
+    - Buenas tardes.
+    - Buenas noches.
+    - ¡Qué tal!
+    - ¿Como estás?
+    - ¿Cómo te va?
+    - ¿Qué hay?
+    - ¿Qué onda?
+    - ¿Cómo te encuentras?
+    - ¡Qué gusto verte!
+    - ¡Cuánto tiempo sin verte!
+    - ¡Qué placer saludarte!
+    - ¡Qué alegría verte!
+    - ¡Qué bueno verte!
+    - ¿Cómo te ha ido?
+    - ¡Saludos!
+    - ¡Bienvenido!
+    - ¿Todo bien?
+    - ¡Qué tal todo!
+    - ¡Qué bueno verte por aquí!
+    - ¡Qué onda contigo!
+    - ¡Mucho gusto!
+    - ¡Encantado de verte!
+    - ¡Encantada de conocerte!
+    - ¡Un placer saludarte!
+    - ¡Mucho gusto en conocerte!
+    - ¿Cómo ha estado todo?
+    - ¿Cómo va todo?
+    - ¡Qué pasa!
+    - ¡Hola, qué tal!
+    - ¡Qué hay de nuevo!
+    - ¿Cómo va eso!
+    - ¡Qué tal, amigo!
+    - ¿Cómo estás, amiga!
+    - ¡Hola, compañero!
+    - ¡Hola, compañera!
+    - ¡Bienvenidos a todos!
+    - ¡Hola, chicos!
+    - ¡Hola, chicas!
+    - ¿Qué tal el día?
+    - ¡Buen comienzo de semana!
+    - ¡Feliz día!
+    - ¡Feliz tarde!
+    - ¡Feliz noche!
+    - ¡Buenos días, señor!
+    - ¡Buenas tardes, señora!
+    - ¡Buenas noches, caballero!
+    - ¿Cómo has estado, amigo!
+    - Todo bien por aquí, ¿y tú?!
+    - Qué tal, qué cuenta!
+    - Qué gusto verte por aquí!
+    - Qué bueno verte de nuevo!
+    - Bienvenidos de nuevo!
+    - Hola, ¿qué cuentas?
+    - ¿Cómo va todo por allá?
+    - ¿Qué hay de nuevo en tu vida!
+    - Hola, ¿cómo andas?
+    - Saludos cordiales!
+    - Qué tal la familia!
+    - Hola, ¿cómo te ha ido hoy?
+    - Hola, ¿cómo has estado últimamente?
+    - Qué tal tu jornada!
+    - Hola, ¿cómo está todo?
+    - Un placer verte!
+    - Qué tal el trabajo!
+    - Qué tal la vida!
+    - Hola, ¿cómo te sientes?
+    - Qué tal, cómo va la vida!
+    - Saludos a todos!
+    - Hola, ¿cómo te trata la vida?
+    - Qué gusto saludarte hoy!
+    - Mucho gusto en verte!
+    - Qué tal, todo tranquilo?
+    - Qué pasa, amigo/a!
+    - Todo bien contigo?
+    - Hola, ¿cómo sigues?
+    - Qué tal la semana!
+    - Todo excelente, ¿y tú?
+    - Saludos desde aquí!
+    - Hola, ¿cómo va todo por allá?
+    - Qué tal el día de hoy!
+    - Qué pasa por aquí!
+    - Hola, ¿qué tal la vida?
+    - Qué tal tu día a día!
+    - Hola, ¿todo bien en casa?
+    - Qué onda, ¿todo bien?
+
+- intent: Despedidas
+  examples: |
+    - ¡Adiós!
+    - Hasta luego.
+    - Nos vemos.
+    - Hasta pronto.
+    - Hasta mañana.
+    - Cuídate.
+    - Que te vaya bien.
+    - Hasta la próxima.
+    - Hasta la vista.
+    - Chao.
+    - Hasta pronto, amigo/a.
+    - Nos vemos pronto.
+    - Cuídate mucho.
+    - Que tengas un buen día.
+    - Hasta la próxima vez.
+    - Hasta entonces.
+    - Que estés bien.
+    - Que tengas una excelente tarde.
+    - Nos vemos luego.
+    - Hasta más tarde.
+    - Que todo te salga bien.
+    - Que tengas un buen descanso.
+    - Hasta mañana, que descanses.
+    - Hasta el próximo encuentro.
+    - Que te vaya de maravilla.
+    - Nos vemos en otra ocasión.
+    - Cuídate mucho y que estés bien.
+    - Hasta pronto, cuídate.
+    - Hasta siempre.
+    - Que tengas un buen viaje.
+    - Hasta otra.
+    - Nos vemos en el camino.
+    - Te deseo lo mejor.
+    - Cuídate mucho, hasta luego.
+    - Adiós, cuídate.
+    - Nos vemos pronto, espero.
+    - Hasta pronto, que todo te vaya bien.
+    - Hasta más ver.
+    - Cuídate, que todo salga bien.
+    - Nos vemos en otra.
+    - Que tengas un buen día, nos vemos.
+    - Hasta luego, que te vaya bien.
+    - Que tengas un día genial.
+    - Nos vemos, que descanses.
+    - Que todo te salga excelente.
+    - Hasta el próximo día.
+    - Nos vemos, cuídate mucho.
+    - Hasta la próxima oportunidad.
+    - Que todo te vaya de maravilla, adiós.
+    - Hasta pronto, nos vemos.
+    - Nos vemos pronto, que tengas buen día.
+    - Que te vaya muy bien.
+    - Nos vemos, que disfrutes tu día.
+    - Que tengas un excelente día.
+    - Adiós, que todo vaya bien.
+    - Hasta la próxima vez, cuídate.
+    - Cuídate mucho, hasta pronto.
+    - Hasta luego, que todo esté bien.
+    - Nos vemos, cuídate bien.
+    - Hasta luego, que tengas una linda tarde.
+    - Hasta la próxima, cuídate mucho.
+    - Que todo te salga excelente, adiós.
+    - Nos vemos pronto, cuídate.
+    - Adiós, espero verte pronto.
+    - Hasta mañana, cuídate mucho.
+    - Hasta pronto, espero que todo salga bien.
+    - Nos vemos más tarde, cuídate.
+    - Que tengas una tarde maravillosa.
+    - Que todo salga bien, adiós.
+    - Cuídate mucho, hasta la próxima.
+    - Nos vemos, cuídate mucho.
+    - Hasta luego, que todo vaya bien.
+    - Nos vemos, cuídate, hasta pronto.
+    - Que tengas un buen fin de semana.
+    - Hasta pronto, que disfrutes el día.
+    - Hasta la próxima, cuídate mucho.
+    - Adiós, que todo esté bien.
+    - Hasta pronto, que tengas buena suerte.
+    - Nos vemos luego, cuídate mucho.
+    - Nos vemos, cuídate bien.
+    - Adiós, que tengas una noche tranquila.
+    - Hasta la próxima vez, cuídate.
+    - Nos vemos, que todo esté bien.
+    - Hasta luego, que tengas un buen día.
+    - Que todo vaya bien, hasta luego.
+    - Nos vemos pronto, cuídate mucho.
+    - Adiós, cuídate y que tengas buen día.
+    - Nos vemos luego, que descanses.
+    - Hasta luego, que todo salga bien.
+    - Nos vemos, hasta la próxima.
+
+- intent: Afirmaciones
+  examples: |
+    - Sí.
+    - Claro.
+    - Por supuesto.
+    - Sin duda.
+    - Totalmente.
+    - Es cierto.
+    - Definitivamente.
+    - Seguro.
+    - Exactamente.
+    - Así es.
+    - Claro que sí.
+    - Correcto.
+    - Claro que lo haré.
+    - Por supuesto que sí.
+    - Efectivamente.
+    - Es verdad.
+    - Ciertamente.
+    - Por supuesto que lo sé.
+    - Claro, no hay problema.
+    - Así es como es.
+    - Claro que sí lo pienso.
+    - Sin lugar a dudas.
+    - Sí, efectivamente.
+    - Está confirmado.
+    - Lo sé seguro.
+    - Eso es cierto.
+    - Está claro.
+    - Eso está claro.
+    - Estoy de acuerdo.
+    - Esa es la respuesta correcta.
+    - Sí, sin duda.
+    - Eso es lo que quiero.
+    - Estoy convencido/a.
+    - Seguro que sí.
+    - No hay duda.
+    - Esa es la verdad.
+    - Claro, lo haré.
+    - Sí, lo creo.
+    - Esa es la manera.
+    - Sí, puedo hacerlo.
+    - Lo haré con gusto.
+    - Sí, esa es la respuesta.
+    - Sí, estoy seguro/a.
+    - De acuerdo.
+    - Sí, yo también lo creo.
+    - Ciertamente, lo haré.
+    - Así lo creo.
+    - No hay problema.
+    - Sí, entiendo.
+    - Totalmente de acuerdo.
+    - Sí, lo veo claro.
+    - Lo tengo claro.
+    - Sí, eso es correcto.
+    - Sí, lo sé.
+    - Sí, me parece bien.
+    - Claro, te apoyo.
+    - Sí, estoy listo/a.
+    - Sí, eso está bien.
+    - Claro que sí, lo haré.
+    - Definitivamente, sí.
+    - Sí, yo lo haría.
+    - Sí, es la solución.
+    - Claro, eso es lo que quiero.
+    - Sí, lo veo claramente.
+    - Sí, lo confirmo.
+    - Eso es lo que pensé.
+    - Sí, eso es.
+    - Claro que sí, no hay duda.
+    - Sí, lo acepto.
+    - Sí, con gusto.
+    - Sí, eso tiene sentido.
+    - Estoy de acuerdo contigo.
+    - Eso me parece correcto.
+    - Sí, yo también lo haría.
+    - Estoy convencido/a de eso.
+    - Sí, todo está bien.
+    - Lo sé bien.
+    - Sí, todo está claro.
+    - Sí, lo confirmé.
+    - Sí, lo acepto sin problema.
+    - Sí, me parece perfecto.
+    - Eso es lo que pensé.
+    - Sí, estoy dispuesto/a.
+    - Claro, puedo hacerlo.
+    - Sí, tengo la respuesta.
+    - Claro que sí, lo entiendo.
+    - Sí, es exactamente lo que quiero.
+    - Estoy listo/a para hacerlo.
+    - Sí, lo he comprendido.
+    - Sí, lo sé perfectamente.
+    - Sí, eso es lo que quería decir.
+    - Claro, me parece perfecto.
+    - Sí, lo hago sin problema.
+    - Sí, ya lo sé.
+    - Eso es correcto.
+    - Sí, eso es lo que necesito.
+    - Sí, lo haré con gusto.
+    - Sí, lo conseguiré.
+    - Lo tengo claro, sí.
+    - Sí, todo está en orden.
+    - Sí, eso es lo correcto.
+    - Sí, lo tendré en cuenta.
+    - Sí, esa es la decisión correcta.
+
+- intent: Negaciones
+  examples: |
+    - No.
+    - Nunca.
+    - Jamás.
+    - Nada.
+    - Nadie.
+    - Ni hablar.
+    - De ninguna manera.
+    - De ninguna forma.
+    - No es cierto.
+    - No lo creo.
+    - No estoy de acuerdo.
+    - No puedo.
+    - No quiero.
+    - No tengo idea.
+    - No lo sé.
+    - No es posible.
+    - No es verdad.
+    - No me parece.
+    - No me interesa.
+    - No tengo tiempo.
+    - No lo haré.
+    - No me gusta.
+    - No lo pienso hacer.
+    - No quiero saber.
+    - No es necesario.
+    - No lo creo.
+    - No tengo nada que decir.
+    - No me importa.
+    - No es correcto.
+    - No vale la pena.
+    - No lo entiendo.
+    - No lo acepto.
+    - No quiero hacerlo.
+    - No me conviene.
+    - No es justo.
+    - No me parece bien.
+    - No tiene sentido.
+    - No es así.
+    - No tiene importancia.
+    - No tiene caso.
+    - No es lo que esperaba.
+    - No lo puedo permitir.
+    - No tengo nada en contra.
+    - No tengo ningún problema.
+    - No tengo ninguna duda.
+    - No tengo nada que ver con eso.
+    - No lo niego.
+    - No estoy seguro.
+    - No lo acepto.
+    - No me afecta.
+    - No me preocupa.
+    - No me hace feliz.
+    - No me agrada.
+    - No es una opción.
+    - No se puede.
+    - No creo que sea cierto.
+    - No puedo hacer nada al respecto.
+    - No puedo ayudarte.
+    - No lo necesito.
+    - No me molesta.
+    - No es adecuado.
+    - No soy capaz.
+    - No estoy interesado/a.
+    - No me interesa para nada.
+    - No vale.
+    - No lo pienso.
+    - No hay manera.
+    - No lo voy a hacer.
+    - No es mi culpa.
+    - No me siento cómodo/a.
+    - No puedo responder a eso.
+    - No es lo que quiero.
+    - No tiene relevancia.
+    - No creo que funcione.
+    - No me siento bien con eso.
+    - No es lo que busco.
+    - No lo aprobaré.
+    - No puedo aceptar eso.
+    - No tengo fuerzas para eso.
+    - No me parece justo.
+    - No me importa en lo más mínimo.
+    - No quiero involucrarme.
+    - No tiene solución.
+    - No se trata de eso.
+    - No es lo que esperaba.
+    - No quiero saber nada de eso.
+    - No me convence.
+    - No puedo creerlo.
+    - No puedo soportarlo.
+    - No me parece adecuado.
+    - No quiero saber más.
+    - No estoy dispuesto/a.
+    - No tiene sentido para mí.
+    - No me parece importante.
+    - No es relevante.
+    - No tengo nada en contra de eso.
+    - No puedo continuar con esto.
+    - No me hace sentido.
+    - No puedo decir nada.
+
+- intent: PedirRecomendacion
+  examples: |
+    - ¿Qué sopa me recomiendas?
+    - ¿Tienes alguna sugerencia de sopa?
+    - ¿Qué sopa crees que debo probar?
+    - ¿Qué tipo de sopa es buena para hoy?
+    - ¿Me puedes recomendar una sopa ligera?
+    - ¿Qué sopa saludable me sugieres?
+    - ¿Cuál es la sopa más deliciosa que me puedes sugerir?
+    - ¿Tienes recetas para sopas fáciles de hacer?
+    - ¿Qué sopa caliente puedo comer en invierno?
+    - ¿Qué sopa rápida me puedes recomendar?
+    - ¿Qué snack me sugieres para media tarde?
+    - ¿Tienes alguna recomendación para un snack saludable?
+    - ¿Qué snack puedo comer entre comidas?
+    - ¿Me puedes sugerir un snack delicioso?
+    - ¿Qué snack ligero me recomiendas?
+    - ¿Tienes alguna opción de snack bajo en calorías?
+    - ¿Qué snack fácil y rápido puedo preparar?
+    - ¿Cuáles son tus recomendaciones para snacks entre comidas?
+    - ¿Qué snack bajo en azúcares me sugieres?
+    - ¿Tienes alguna receta de snack casero para mí?
+    - ¿Qué complemento me sugieres para acompañar mi comida?
+    - ¿Me puedes recomendar un buen complemento para mi plato?
+    - ¿Qué complemento debo agregar a mi comida?
+    - ¿Tienes alguna recomendación de complemento?
+    - ¿Qué complemento es ideal para acompañar el almuerzo?
+    - ¿Cuáles son los mejores complementos para una comida ligera?
+    - ¿Qué complemento puedo agregar a mi cena?
+    - ¿Qué complemento saludable me sugieres para mi plato principal?
+    - ¿Qué complemento es bueno para una comida balanceada?
+    - ¿Tienes alguna sugerencia de complemento para mi comida de hoy?
+    - ¿Qué bebida me recomiendas para acompañar la comida?
+    - ¿Tienes alguna sugerencia de bebida para hoy?
+    - ¿Qué bebida es ideal para el almuerzo?
+    - ¿Qué bebida saludable me puedes recomendar?
+    - ¿Qué tipo de bebida va bien con un plato principal?
+    - ¿Qué bebida refrescante me sugieres para la tarde?
+    - ¿Qué bebida es buena para acompañar la cena?
+    - ¿Tienes alguna recomendación para una bebida energética?
+    - ¿Qué bebida crees que debe acompañar mi desayuno?
+    - ¿Qué bebida caliente me sugieres para la tarde?
+    - ¿Qué comida sólida me sugieres para hoy?
+    - ¿Tienes alguna recomendación de comida sólida?
+    - ¿Qué tipo de platillo sólido me recomendarías?
+    - ¿Qué comida sólida crees que debo probar?
+    - ¿Qué opciones de comida sólida tienes?
+    - ¿Qué comida sólida es buena para el almuerzo?
+    - ¿Cuáles son los mejores platillos sólidos que me puedes sugerir?
+    - ¿Qué tipo de comida sólida debería comer esta noche?
+    - ¿Qué comida sólida es ideal para una comida ligera?
+    - ¿Qué opción de comida sólida me recomiendas?
+    - ¿Qué comida alta en calorías me sugieres?
+    - ¿Cuáles son las mejores opciones de comida con muchas calorías?
+    - ¿Qué platillo con alto contenido calórico me recomiendas?
+    - ¿Qué comida alta en calorías es buena para mí?
+    - ¿Qué opciones de comida alta en calorías puedo elegir?
+    - ¿Qué comida rica en calorías me puedes recomendar?
+    - ¿Tienes alguna receta de comida alta en calorías?
+    - ¿Qué platillo alto en calorías debo considerar?
+    - ¿Qué tipo de comida alta en calorías es ideal para mi dieta?
+    - ¿Qué comida con muchas calorías me sugieres?
+    - ¿Qué comida baja en calorías me recomiendas?
+    - ¿Cuáles son las opciones más saludables de comida baja en calorías?
+    - ¿Qué platillo bajo en calorías puedo probar?
+    - ¿Qué comida ligera y baja en calorías me sugieres?
+    - ¿Qué tipo de comida baja en calorías es buena para hoy?
+    - ¿Tienes recetas para comida baja en calorías?
+    - ¿Qué comida sin muchas calorías debería comer?
+    - ¿Qué platillo con pocas calorías me recomendarías?
+    - ¿Cuáles son las mejores opciones de comida baja en calorías?
+    - ¿Qué opciones de comida baja en calorías tienes para mí?
+    - ¿Qué comida alta en proteínas me sugieres?
+    - ¿Qué opciones de comida ricas en proteínas tienes?
+    - ¿Cuáles son los mejores platillos altos en proteínas?
+    - ¿Qué comida con alto contenido proteico me recomiendas?
+    - ¿Qué comida es buena para aumentar las proteínas?
+    - ¿Tienes recetas para comida alta en proteínas?
+    - ¿Qué tipo de comida alta en proteínas es buena para hoy?
+    - ¿Qué comida rica en proteínas debería probar?
+    - ¿Qué platillo alto en proteínas me puedes recomendar?
+    - ¿Cuáles son las opciones con más proteínas que me sugieres?
+    - ¿Qué comida baja en proteínas me recomiendas?
+    - ¿Tienes alguna opción baja en proteínas para mí?
+    - ¿Qué platillo con bajo contenido de proteínas puedo probar?
+    - ¿Qué tipo de comida baja en proteínas es recomendable?
+    - ¿Cuáles son las mejores opciones de comida baja en proteínas?
+    - ¿Qué comida baja en proteínas debo considerar?
+    - ¿Tienes recetas de comida baja en proteínas?
+    - ¿Qué comida sin muchas proteínas me sugerirías?
+    - ¿Qué platillo bajo en proteínas es ideal para mí?
+    - ¿Qué opciones bajas en proteínas tienes para mí?
+    - ¿Qué comida alta en grasas me sugieres?
+    - ¿Tienes alguna opción rica en grasas para mí?
+    - ¿Qué platillo con alto contenido de grasas puedo probar?
+    - ¿Qué comida alta en grasas es buena para hoy?
+    - ¿Qué tipo de comida con muchas grasas me recomendarías?
+    - ¿Qué comida rica en grasas es buena para una dieta balanceada?
+    - ¿Cuáles son las opciones con más grasas que me sugieres?
+    - ¿Qué platillo alto en grasas crees que debería probar?
+    - ¿Tienes alguna receta de comida con alto contenido en grasas?
+    - ¿Qué comida alta en grasas puedo elegir para mi dieta?
+    - ¿Qué comida baja en grasas me recomiendas?
+    - ¿Qué opciones de comida baja en grasas tienes?
+    - ¿Cuáles son los mejores platillos bajos en grasas?
+    - ¿Qué comida ligera y baja en grasas puedo probar?
+    - ¿Qué tipo de comida baja en grasas es ideal para mí?
+    - ¿Qué comida sin muchas grasas debería comer hoy?
+    - ¿Tienes recetas de comida baja en grasas?
+    - ¿Qué platillo bajo en grasas me sugieres?
+    - ¿Cuáles son las opciones más bajas en grasas que tienes?
+    - ¿Qué comida sin muchas grasas me puedes recomendar?
+    - ¿Qué comida con gluten me sugieres?
+    - ¿Tienes alguna opción con gluten para mí?
+    - ¿Qué platillo con gluten debo probar?
+    - ¿Qué comida con gluten es buena para hoy?
+    - ¿Cuáles son las opciones con gluten que tienes para mí?
+    - ¿Qué comida con gluten me recomendarías para el almuerzo?
+    - ¿Qué tipo de comida con gluten es ideal para mi dieta?
+    - ¿Me puedes recomendar un platillo con gluten?
+    - ¿Qué platillo con gluten es bueno para la cena?
+    - ¿Tienes alguna receta con gluten que deba probar?
+    - ¿Qué comida sin gluten me sugieres?
+    - ¿Tienes alguna opción sin gluten para mí?
+    - ¿Qué platillo sin gluten puedo probar?
+    - ¿Qué comida sin gluten es buena para hoy?
+    - ¿Cuáles son las opciones sin gluten que tienes para mí?
+    - ¿Qué comida sin gluten me recomendarías para el almuerzo?
+    - ¿Qué tipo de comida sin gluten es ideal para mi dieta?
+    - ¿Me puedes recomendar un platillo sin gluten?
+    - ¿Qué platillo sin gluten es bueno para la cena?
+    - ¿Tienes alguna receta sin gluten que deba probar?
+    - ¿Qué comida vegana me sugieres?
+    - ¿Tienes alguna opción vegana para mí?
+    - ¿Qué platillo vegano debo probar?
+    - ¿Qué comida vegana es buena para hoy?
+    - ¿Cuáles son las mejores opciones veganas que tienes?
+    - ¿Qué comida vegana me recomendarías para el almuerzo?
+    - ¿Qué tipo de comida vegana es ideal para mi dieta?
+    - ¿Me puedes recomendar un platillo vegano?
+    - ¿Qué platillo vegano es bueno para la cena?
+    - ¿Tienes alguna receta vegana que deba probar?
+    - ¿Qué platillo para la cena debo probar?
+    - ¿Qué comida para la cena es buena para hoy?
+    - ¿Cuáles son las mejores opciones para la cena que tienes?
+    - ¿Qué comida para la cena me recomendarías?
+    - ¿Qué tipo de comida es ideal para la cena?
+    - ¿Me puedes recomendar un platillo para la cena?
+    - ¿Qué platillo para la cena es bueno para la noche?
+    - ¿Tienes alguna receta para la cena que deba probar?
+    - ¿Qué postre me sugieres?
+    - ¿Tienes alguna opción de postre que me recomiendes?
+    - ¿Qué platillo dulce debo probar?
+    - ¿Qué postre es bueno para hoy?
+    - ¿Cuáles son los mejores postres que tienes?
+    - ¿Qué postre me recomendarías para después de la comida?
+    - ¿Qué tipo de postre es ideal para mi dieta?
+    - ¿Me puedes recomendar un postre delicioso?
+    - ¿Qué postre es bueno para después de la cena?
+    - ¿Tienes alguna receta para un postre que deba probar?
+    - ¿Qué sopa me sugieres?
+    - ¿Tienes alguna opción de sopa que me recomiendes?
+    - ¿Qué sopa debo probar?
+    - ¿Qué sopa es buena para hoy?
+    - ¿Cuáles son las mejores sopas que tienes?
+    - ¿Qué sopa me recomendarías para el almuerzo?
+    - ¿Qué tipo de sopa es ideal para mi dieta?
+    - ¿Me puedes recomendar una sopa deliciosa?
+    - ¿Qué sopa es buena para la cena?
+    - ¿Tienes alguna receta para una sopa que deba probar?
+    - ¿Qué snack me sugieres?
+    - ¿Tienes alguna opción de snack que me recomiendes?
+    - ¿Qué snack debo probar?
+    - ¿Qué snack es bueno para hoy?
+    - ¿Cuáles son los mejores snacks que tienes?
+    - ¿Qué snack me recomendarías para la tarde?
+    - ¿Qué tipo de snack es ideal para mi dieta?
+    - ¿Me puedes recomendar un snack delicioso?
+    - ¿Qué snack es bueno para un día ocupado?
+    - ¿Tienes alguna receta para un snack que deba probar?
+    - ¿Qué complemento me sugieres para mi comida?
+    - ¿Tienes algún complemento que me recomiendes?
+    - ¿Qué complemento debo probar para mejorar la comida?
+    - ¿Qué complemento es bueno para hoy?
+    - ¿Cuáles son los mejores complementos que tienes?
+    - ¿Qué complemento me recomendarías para acompañar mi comida?
+    - ¿Qué tipo de complemento es ideal para mi dieta?
+    - ¿Me puedes recomendar un complemento delicioso?
+    - ¿Qué complemento es bueno para la comida?
+    - ¿Tienes alguna receta para un complemento que deba probar?
+    - ¿Qué bebida me sugieres para acompañar mi comida?
+    - ¿Tienes alguna opción de bebida que me recomiendes?
+    - ¿Qué bebida debo probar para acompañar mi platillo?
+    - ¿Qué bebida es buena para hoy?
+    - ¿Cuáles son las mejores bebidas que tienes?
+    - ¿Qué bebida me recomendarías para la comida?
+    - ¿Qué tipo de bebida es ideal para mi dieta?
+    - ¿Me puedes recomendar una bebida refrescante?
+    - ¿Qué bebida es buena para la cena?
+    - ¿Tienes alguna receta para una bebida que deba probar?
+    - ¿Qué comida vegana me sugieres?
+    - ¿Tienes alguna opción vegana que me recomiendes?
+    - ¿Qué platillo vegano debo probar?
+    - ¿Qué comida vegana es buena para hoy?
+    - ¿Cuáles son las mejores opciones veganas que tienes?
+    - ¿Qué comida vegana me recomendarías para el almuerzo?
+    - ¿Qué tipo de comida vegana es ideal para mi dieta?
+    - ¿Me puedes recomendar un platillo vegano delicioso?
+    - ¿Qué platillo vegano es bueno para la cena?
+    - ¿Tienes alguna receta vegana que deba probar?
+    - ¿Qué comida me recomiendas que sea ácida y picante?
+    - ¿Puedes sugerir una comida amargosa y picante?
+    - ¿Qué opción ácida y amarga tienes para mí?
+    - ¿Hay algo picante y ácido que deba probar?
+    - ¿Tienes alguna comida que sea tanto ácida como picante?
+    - ¿Qué comida tiene un sabor ácido y picante a la vez?
+    - ¿Me puedes recomendar una opción ácida y amarga para hoy?
+    - ¿Qué platillo tiene un toque ácido y picante?
+    - ¿Tienes alguna receta que combine acidez y picante?
+    - ¿Qué comida ácida y picante es buena para mi dieta?
+    - ¿Qué comida es buena tanto para el desayuno como para la comida?
+    - ¿Tienes alguna sugerencia que sirva tanto para el desayuno como para la comida?
+    - ¿Qué opción puedo elegir para un desayuno que también funcione como comida?
+    - ¿Qué platillo es ideal tanto para el desayuno como para la comida?
+    - ¿Me puedes recomendar algo que sirva tanto en el desayuno como en la comida?
+    - ¿Qué tipo de snack sin gluten es ideal para mi dieta?
+    - ¿Tienes alguna opción de snack sin gluten que sea rica en proteínas?
+    - ¿Qué snack sin gluten es perfecto para acompañar mi café?
+    - ¿Qué snack sin gluten puedo llevar al trabajo?
+    - ¿Tienes algún snack sin gluten que me deje satisfecho/a por más tiempo?
+    - ¿Qué bebida con gluten me recomendarías para el desayuno?
+    - ¿Tienes alguna bebida con gluten que combine bien con comida?
+    - ¿Qué bebida con gluten es ideal para la hora del té?
+    - ¿Me puedes sugerir una bebida con gluten para acompañar la comida?
+    - ¿Qué bebida con gluten debo probar si quiero algo diferente?
+    - ¿Qué tipo de bebida con gluten puedo disfrutar en una fiesta?
+    - ¿Tienes alguna bebida con gluten que sea perfecta para el brunch?
+    - ¿Qué bebida con gluten puedo preparar fácilmente en casa?
+    - ¿Qué bebida con gluten es ideal para acompañar un postre?
+    - ¿Tienes alguna bebida con gluten que me ayude a relajarme después de trabajar?
+    - ¿Qué comida vegana me recomendarías para la comida de hoy?
+    - ¿Tienes alguna receta vegana que sea rápida y fácil de preparar?
+    - ¿Qué tipo de comida vegana puedo disfrutar hoy que sea deliciosa?
+    - ¿Me puedes sugerir una comida vegana ligera para la cena?
+    - ¿Qué comida vegana rica en proteínas debo probar?
+    - ¿Qué comida vegana puedo hacer para una fiesta?
+    - ¿Tienes alguna receta de comida vegana que sea perfecta para el almuerzo?
+    - ¿Qué comida vegana es ideal para mantenerme lleno/a durante el día?
+    - ¿Qué comida vegana puedo hacer si tengo poco tiempo para cocinar?
+    - ¿Tienes alguna opción de comida vegana que sea deliciosa y nutritiva?
+
+- intent: informacionComida
+  examples: |
+   - [Salado](Tipo)
+   - [Picante](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en proteínas](Proteinas)
+
+   - [Salado](Tipo)
+   - [Ácido ]()
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sopa]()
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Alto en grasas](Proteinas)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en proteínas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en proteínas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [Picante](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [Ácido ]()
+   - [Picante](Tipo)
+   - [México](Region)
+   - [Complemento]()
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Picante](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Vegano](Vegano)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Dulce](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+
+   - [Salado](Tipo)
+   - [Picante](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Complemento]()
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+
+   - [Dulce](Tipo)
+   - [México](Region)
+   - [Postre]()
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+
+   - [Salado](Tipo)
+   - [Ácido ]()
+   - [Picante](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Bajo en grasas](Proteinas)
+
+   - [Salado](Tipo)
+   - [Ácido ]()
+   - [Picante](Tipo)
+   - [México](Region)
+   - [Cena](Horario)
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [México](Region)
+   - [Cena](Horario)
+   - [Postre]()
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Complemento]()
+   - [Sólido ](Estado)
+   - [Alta en proteínas](Proteinas)
+   - [Bajo en grasas](Proteinas)
+
+   - [Salado](Tipo)
+   - [Ácido ]()
+   - [Picante](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Bajo en grasas](Proteinas)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+
+   - [Salado](Tipo)
+   - [Ácido ]()
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sopa]()
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+
+   - [Salado](Tipo)
+   - [Ácido ]()
+   - [Picante](Tipo)
+   - [México](Region)
+   - [Complemento]()
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Complemento]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sopa]()
+
+   - [Dulce](Tipo)
+   - [Ácido ]()
+   - [México](Region)
+   - [Bebida](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+
+   - [Salado](Tipo)
+   - [Picante](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+
+   - [Dulce](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Cena](Horario)
+   - [Bebida](Estado)
+   - [Alta en calorías](Calorias)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+
+   - [Salado](Tipo)
+   - [Ácido ]()
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sopa]()
+
+   - [Ácido ]()
+   - [México](Region)
+   - [Bebida](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Bebida](Estado)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [México](Region)
+   - [Postre]()
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+
+   - [Dulce](Tipo)
+   - [México](Region)
+   - [Postre]()
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Ácido ]()
+   - [México](Region)
+   - [Snack]()
+   - [Bebida](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Ácido ]()
+   - [México](Region)
+   - [Snack]()
+   - [Bebida](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+
+   - [Dulce](Tipo)
+   - [México](Region)
+   - [Postre]()
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [México](Region)
+   - [Postre]()
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [Dulce](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Snack]()
+   - [Complemento]()
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [Mexico]()
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Alto en grasas](Proteinas)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Dulce](Tipo)
+   - [Amargo](Tipo)
+   - [México](Region)
+   - [Bebida](Estado)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [México](Region)
+   - [Desayuno](Horario)
+   - [Cena](Horario)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+
+   - [Dulce](Tipo)
+   - [México](Region)
+   - [Cena](Horario)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [México](Region)
+   - [Comida](Horario)
+   - [Sopa]()
+   - [Gluten](Gluten)
+
+   - [Dulce](Tipo)
+   - [México](Region)
+   - [Cena](Horario)
+   - [Postre]()
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Dulce](Tipo)
+   - [México](Region)
+   - [Cena](Horario)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Italia](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Italia](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Complemento]()
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Italia](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en proteínas](Proteinas)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Italia](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [Ácido ]()
+   - [Italia](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [Amargo](Tipo)
+   - [Italia](Region)
+   - [Postre]()
+   - [Bebida](Estado)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [Italia](Region)
+   - [Bebida](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Amargo](Tipo)
+   - [Italia](Region)
+   - [Bebida](Estado)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [Italia](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Bajo en grasas](Proteinas)
+
+   - [Dulce](Tipo)
+   - [Italia](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Italia](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Italia](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Francia](Region)
+   - [Desayuno](Horario)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Dulce](Tipo)
+   - [Francia](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Francia](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Dulce](Tipo)
+   - [Francia](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Dulce](Tipo)
+   - [Francia](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Dulce](Tipo)
+   - [Francia](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [Dulce](Tipo)
+   - [Francia](Region)
+   - [Desayuno](Horario)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Asiatica](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en proteínas](Proteinas)
+
+   - [Salado](Tipo)
+   - [Ácido ]()
+   - [Picante](Tipo)
+   - [Asiatica](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+
+   - [Salado](Tipo)
+   - [Asiatica](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+
+   - [Salado](Tipo)
+   - [Asiatica](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+
+   - [Dulce](Tipo)
+   - [Ácido ]()
+   - [Asiatica](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en proteínas](Proteinas)
+
+   - [Salado](Tipo)
+   - [Asiatica](Region)
+   - [Comida](Horario)
+   - [Complemento]()
+   - [Sólido ](Estado)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [Amargo](Tipo)
+   - [Asiatica](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en proteínas](Proteinas)
+
+   - [Salado](Tipo)
+   - [Asiatica](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [Asiatica](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [Américana](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [Américana](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [Dulce](Tipo)
+   - [Américana](Region)
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+
+   - [Salado](Tipo)
+   - [Américana](Region)
+   - [Snack]()
+   - [Complemento]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [España](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+
+   - [Dulce](Tipo)
+   - [Américana](Region)
+   - [Desayuno](Horario)
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [Américana](Region)
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [Américana](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [Picante](Tipo)
+   - [Américana](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+
+   - [Salado](Tipo)
+   - [Picante](Tipo)
+   - [Américana](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+
+   - [Dulce](Tipo)
+   - [Américana](Region)
+   - [Desayuno](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Desayuno](Horario)
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Bajo en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [Desayuno](Horario)
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+
+   - [Dulce](Tipo)
+   - [Desayuno](Horario)
+   - [Postre]()
+   - [Snack]()
+   - [Baja en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Bajo en grasas](Proteinas)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Desayuno](Horario)
+   - [Cena](Horario)
+   - [Postre]()
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [Amargo](Tipo)
+   - [Postre]()
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [Picante](Tipo)
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [Postre]()
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alto en grasas](Proteinas)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Francia](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Complemento]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [India](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en proteínas](Proteinas)
+
+   - [Salado](Tipo)
+   - [Mexico]()
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en proteínas](Proteinas)
+
+   - [Salado](Tipo)
+   - [España](Region)
+   - [Comida](Horario)
+   - [Snack]()
+   - [Sólido ](Estado)
+
+   - [Salado](Tipo)
+   - [Medio oriente](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [Europa]()
+   - [Desayuno](Horario)
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Bajo en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [Japón](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sopa]()
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Bajo en grasas](Proteinas)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Ácido ]()
+   - [Picante](Tipo)
+   - [Tailandia](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sopa]()
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [Japón](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sopa]()
+   - [Baja en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Francia](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [Medio Oriente]()
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Latinoamérica](Region)
+   - [Postre]()
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [África del Norte](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [Ácido ]()
+   - [Francia](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Ácido ]()
+   - [India](Region)
+   - [Postre]()
+   - [Bebida](Estado)
+   - [Baja en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Argentina](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Italia](Region)
+   - [Desayuno](Horario)
+   - [Postre]()
+   - [Snack]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Grecia](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Alto en grasas](Proteinas)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Japón](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Bajo en grasas](Proteinas)
+
+   - [Dulce](Tipo)
+   - [India](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Américana](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Américana](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Américana](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [Reino Unido](Region)
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+
+   - [Dulce](Tipo)
+   - [Américana](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Dulce](Tipo)
+   - [Latinoamérica](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [Centroamerica]()
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+
+   - [Dulce](Tipo)
+   - [Japonesa](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [Dulce](Tipo)
+   - [Américana](Region)
+   - [Desayuno](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Dulce](Tipo)
+   - [Américana](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Américana](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Américana](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Américana](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Picante](Tipo)
+   - [Mexico]()
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [Mexico]()
+   - [Comida](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [Internacional](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Complemento]()
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Salado](Tipo)
+   - [Centroamérica](Region)
+   - [Desayuno](Horario)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+
+   - [Dulce](Tipo)
+   - [España](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Internacional](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Lactosa](Lactosa)
+
+   - [Salado](Tipo)
+   - [Argentina](Region)
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Alto en grasas](Proteinas)
+   - [Gluten](Gluten)
+
+   - [Salado](Tipo)
+   - [Medio Oriente]()
+   - [Comida](Horario)
+   - [Cena](Horario)
+   - [Sólido ](Estado)
+   - [Baja en calorías](Calorias)
+   - [Alta en proteínas](Proteinas)
+   - [Bajo en grasas](Proteinas)
+
+   - [Dulce](Tipo)
+   - [Ácido ]()
+   - [Caribe](Region)
+   - [Bebida](Estado)
+   - [Baja en calorías](Calorias)
+   - [Bajo en grasas](Proteinas)
+   - [Vegano](Vegano)
+   - [Lactosa](Lactosa)
+
+   - [Dulce](Tipo)
+   - [Nueva Zelanda](Region)
+   - [Postre]()
+   - [Sólido ](Estado)
+   - [Alta en calorías](Calorias)
+   - [Alto en grasas](Proteinas)
+   - [Lactosa](Lactosa)
