@@ -80,9 +80,9 @@ slots:
   momento_del_dia:
     type: categorical
     values:
-      - "Desayuno"
-      - "Comida"
-      - "Cena"
+      - "desayuno"
+      - "comida"
+      - "cena"
     mappings:
       - type: custom
   vegetariano:
@@ -130,23 +130,10 @@ slots:
     type: bool
     mappings:
       - type: from_llm
-  bebida:
-    type: bool
-    mappings:
-      - type: from_llm
-  complemento:
-    type: bool
-    mappings:
-      - type: from_llm
-  refrigerio:
-    type: bool
-    mappings:
-      - type: from_llm
-  sopa:
-    type: bool
-    mappings:
-      - type: from_llm
-  postre:
-    type: bool
+  tipo_aperitivo:
+    type: categorical
+    values:
+      - "aperitivo"
+      - "postre"
     mappings:
       - type: from_llm

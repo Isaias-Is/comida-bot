@@ -14,11 +14,11 @@ class ActionSetTime(Action):
         hour = now.hour
         #Check if it's morning, noon or evening.
         if hour >= 0 and hour < 12:
-            momento_del_dia = "Desayuno"
+            momento_del_dia = "desayuno"
         elif hour >= 12 and hour < 18:
-            momento_del_dia = "Comida"
+            momento_del_dia = "comida"
         else:
-            momento_del_dia = "Cena"
+            momento_del_dia = "cena"
 
         return [SlotSet("momento_del_dia", momento_del_dia)]
 

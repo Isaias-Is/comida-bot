@@ -5,5 +5,8 @@ __pycache__/
 
 # Ignora los archivos:
 credentials.yml
-# Ignora todos los archivocs CSV.
-*.csv
+*.xlsx
+*csv
+test.py
+#... Excepto
+!db/bd.csv
