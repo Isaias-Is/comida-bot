@@ -192,6 +192,18 @@ nlu:
     - Hasta luego, que todo salga bien.
     - Nos vemos, hasta la próxima.
 
+- intent: ConfirmacionDeLectura
+  examples: |
+    - Sí.
+    - Claro.
+    - Por supuesto.
+    - Sin duda.
+    - Totalmente.
+    - Es cierto.
+    - Definitivamente.
+    - Seguro.
+    - Exactamente.
+
 - intent: Afirmaciones
   examples: |
     - Sí.

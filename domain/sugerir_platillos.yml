@@ -56,7 +56,7 @@ responses:
     - text: "Cuál es el nombre de la comida o bebida que desea ver su imagen?"
   utter_mostrar_imagen:
     - text: "Aquí hay una imagen de {nombre_comida}"
-      #image: "<RecomiendaBot\data\Tacos.jpg>"
+      image: "<./data/Tacos.jpg>"
 
 slots:
   restricciones_activadas:
