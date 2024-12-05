@@ -25,10 +25,16 @@ flows:
             then:
               - call: personalizar_aporte_nutricional
               - call: personalizar_region
-                next: "mostrar_sugerencias"
-          - else: mostrar_sugerencias
+                next: "mostrar_sugs"
+          - else: "mostrar_sugs"
+      - call: mostrar_sugerencias
+        id: mostrar_sugs
+
+  mostrar_sugerencias:
+    description: Muestra sugerencias de platillos al usuario según el flujo anterior.
+    if: false
+    steps:
       - action: mostrar_sugerencias
-        id: mostrar_sugerencias
 
   personalizar_aporte_nutricional:
     name: Personaliza el aporte nutricional de la sugerencia.
