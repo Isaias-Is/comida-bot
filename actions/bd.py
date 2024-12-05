@@ -64,10 +64,10 @@ class BaseDatos():
            lectorCSV = csv.reader(archivo)
            print(next(lectorCSV))
            for comida in lectorCSV:
-               CSVToDict.bd.append(Comida(comida[0], comida[1], comida[2], comida[3],
+               BaseDatos.bd.append(Comida(comida[0], comida[1], comida[2], comida[3],
                                             comida[4], comida[5], comida[6], comida[7],
                                             comida[8], comida[9], comida[10], comida[11]))
-           #for i in CSVToDict.bd: # For testing.
+           #for i in BaseDatos.bd: # For testing.
            #     print(i)
 
     """ Descripción: Filtrar productos de acuerdo a sus características.
@@ -77,7 +77,7 @@ class BaseDatos():
                  tiempo_dia="", aperitivo="", tipo_comida="",
                  calorias="", proteinas_altas=False, grasas="", sin_gluten=False,
                  vegano=False, sin_lactosa=False):
-        resultados = CSVToDict.bd
+        resultados = BaseDatos.bd
 
         print(f"INFO: Función: (filtrarProductos)\n\tArgumentos: {nombre}, {perfil_sabor}, {region}, {tiempo_dia}, {aperitivo}, " +
               f"{tipo_comida}, {calorias}, {proteinas_altas}, {grasas}, {sin_gluten}, " +
